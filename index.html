@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈佳依 - 个人简介</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            animation: pageFade 0.8s ease-in-out;
+        }
+        @keyframes pageFade {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-box {
+            background: #ffffff;
+            width: 100%;
+            max-width: 720px;
+            padding: 45px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 30, 80, 0.08);
+            transition: all 0.3s ease;
+        }
+        .card-box:hover {
+            box-shadow: 0 8px 30px rgba(0, 30, 80, 0.12);
+            transform: translateY(-4px);
+        }
+        .avatar-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #e8f0fe;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 42px;
+            color: #2b5b9c;
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+            color: #1f2937;
+            font-size: 36px;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+        }
+        /* 关键修改：取消固定宽度，标签和内容紧贴，仅少量间隔 */
+        .info-line {
+            font-size: 18px;
+            color: #374151;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+        .info-line span {
+            font-weight: 600;
+            color: #2b5b9c;
+            /* 只给右边一点间距，不会空一大截 */
+            margin-right: 12px;
+        }
+        .skill-group {
+            margin: 25px 0;
+        }
+        .skill-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2b5b9c;
+            margin-bottom: 12px;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .tag {
+            background-color: #e8f0fe;
+            color: #2b5b9c;
+            padding: 6px 16px;
+            border-radius: 99px;
+            font-size: 15px;
+        }
+        .desc-text {
+            margin-top: 20px;
+            font-size: 17px;
+            line-height: 1.8;
+            color: #4b5563;
+            text-align: justify;
+        }
+        .footer-tip {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        @media screen and (max-width: 550px) {
+            .card-box {
+                padding: 25px 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .avatar {
+                width: 90px;
+                height: 90px;
+                font-size: 32px;
+            }
+            .info-line {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card-box">
+        <div class="avatar-area">
+            <div class="avatar">陈</div>
+        </div>
+        <h1>个人简介</h1>
+
+        <div class="info-line">
+            <span>姓名：</span>陈佳依
+        </div>
+        <div class="info-line">
+            <span>学号：</span>202430919
+        </div>
+        <div class="info-line">
+            <span>班级：</span>2024309班
+        </div>
+        <div class="info-line">
+            <span>专业：</span>软件工程T
+        </div>
+        <div class="info-line">
+            <span>兴趣爱好：</span>阅读、编程、运动
+        </div>
+
+        <div class="skill-group">
+            <div class="skill-title">专业技能</div>
+            <div class="tag-list">
+                <span class="tag">Java</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">AI工具使用</span>
+            </div>
+        </div>
+
+        <p class="desc-text">
+            在大学学习期间，我系统学习了计算机相关专业知识，本次科技前沿讲座让我深入了解了生成式大模型技术。我坚持理论结合实践，主动探索AI工具在编程中的应用，借助DeepSeek等代码大模型完成本次个人简介网站的搭建与优化，在实操过程中掌握AI辅助开发完整流程，不断提升自身专业能力。在今后的学习中，我会继续夯实编程底层基础，善用人工智能前沿技术辅助项目开发，规范使用AI工具并坚持人工代码审核，努力成为一名兼具理论基础与工程实践能力的合格工科专业学生。
+        </p>
+
+        <div class="footer-tip">
+            本网站由DeepSeek大模型辅助开发 | Github Pages部署
+        </div>
+    </div>
+</body>
+</html>
